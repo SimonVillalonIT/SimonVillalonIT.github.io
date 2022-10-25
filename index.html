@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+    <link href="css/templatemo-style.css" rel="stylesheet" />
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+
+<body>
+
+    <div class="container">
+        <!-- Top box -->
+        <!-- Logo & Site Name -->
+        <div class="placeholder">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/dia-del-medio-ambiente-2022-2.jpg">
+                <div class="tm-header">
+                    <div class="row tm-header-inner">
+                        <div class="col-md-6 col-12">
+                            <img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" />
+                            <div class="tm-site-text-box">
+                                <h1 class="tm-site-title">Dyson</h1>
+                                <h6 class="tm-site-description">Cuidado Medioambiental</h6>
+                            </div>
+                        </div>
+                        <nav class="col-md-6 col-12 tm-nav">
+                            <ul class="tm-nav-ul">
+                                <li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Inicio</a></li>
+                                <li class="tm-nav-li"><a href="about.html" class="tm-nav-link">Acerca de Nosotros</a></li>
+                                <li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contáctanos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <header class="row tm-welcome-section">
+                <h2 class="col-12 text-center tm-section-title">Quiénes somos</h2>
+                <p class="col-12 text-center">Durante 1 año trabajamos junto a cientos de municipios, organizaciones, instituciones, viveros, escuelas, empresas y ciudadanos/as para multiplicar las acciones de donación, plantación y adopción de nativas en todo el país y buscando alcanzar
+                    el Millón de Árboles y un cambio de consciencia. </p>
+            </header>
+            <div class="tm-section tm-container-inner">
+                <div class="row">
+                    <div class="col-md-6">
+                        <figure class="tm-description-figure">
+                            <img style="width: 500px; height:400px;object-fit:cover;" src="https://www.nueva-iso-14001.com/wp-content/uploads/2020/12/medio-ambiente.jpg" alt="Image" class="img-fluid" />
+                        </figure>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tm-description-box">
+                            <h4 class="tm-gallery-title">Nuestro compromiso con la naturaleza no tiene fin 🍀</h4>
+                            <p class="tm-mb-45">Adoptar un enfoque ecológico parece ser la mejor manera de ayudar al medio ambiente desde su empresa. Muchas empresas simplemente se adaptan a la normativa relacionada con el medio ambiente para evitar sanciones por su actividad,
+                                pero esto no es suficiente. Debemos ir un poco más allá de lo que dice la legislación y asumir desde la empresa ese compromiso individual relacionado con el cuidado y respeto del medio ambiente en el que operamos. Es una
+                                cultura de empresa responsable, que debe llegar a todos los trabajadores.</p>
+                            <a href="about.html" class="tm-btn tm-btn-default tm-right">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="tm-footer text-center">
+            <p>| Copyright &copy; 2022 Dyson |
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Handle click on paging links
+            $('.tm-paging-link').click(function(e) {
+                e.preventDefault();
+
+                var page = $(this).text().toLowerCase();
+                $('.tm-gallery-page').addClass('hidden');
+                $('#tm-gallery-page-' + page).removeClass('hidden');
+                $('.tm-paging-link').removeClass('active');
+                $(this).addClass("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
